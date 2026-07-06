@@ -265,8 +265,15 @@ a:focus-visible, button:focus-visible{
 }
 .hero-photo-wrap.in{ animation:photoIn 1s var(--ease) .45s forwards; }
 @keyframes photoIn{ to{ opacity:1; transform:translateY(0); } }
-.hero-photo{ height:124%; max-width:none; object-fit:contain; object-position:bottom center; filter:drop-shadow(0 30px 40px rgba(0,0,0,.18)); }
 
+.hero-photo{
+  height:124%;
+  max-width:none;
+  object-fit:contain;
+  object-position:bottom center;
+  filter:drop-shadow(0 30px 40px rgba(0,0,0,.18));
+  transform:none !important;
+}
 .hero-micro{
   position:absolute; right:0; bottom:-8px;
   text-align:right; font-family:var(--mono);
@@ -1087,14 +1094,11 @@ a.c-value:hover{ color:var(--orange-deep); }
   .module-two{ top:185px; }
   .module-three{ bottom:185px; }
   .module-four{ bottom:72px; }
+  .axis-core-visual,
   .axis-lines,
   .axis-core-ring.ring-two,
   .axis-core-ring.ring-three{
     display:none;
-  }
-  .axis-core-dot{
-    width:92px;
-    height:92px;
   }
   .resume-list.two-col{
     grid-template-columns:1fr;
