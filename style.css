@@ -1088,9 +1088,13 @@ a.c-value:hover{ color:var(--orange-deep); }
   .axis-detail-headline{
     font-size:clamp(3.5rem, 18vw, 5.8rem);
   }
-  .axis-panel{
+   .axis-panel{
     height:620px;
     border-radius:14px;
+    background:rgba(255,255,255,.5);
+  }
+  .axis-panel::before{
+    display:none;
   }
   .axis-panel-top{
     flex-direction:column;
@@ -1104,11 +1108,11 @@ a.c-value:hover{ color:var(--orange-deep); }
   .module-two{ top:185px; }
   .module-three{ bottom:185px; }
   .module-four{ bottom:72px; }
-  .axis-core-visual,
-  .axis-lines,
-  .axis-core-ring.ring-two,
-  .axis-core-ring.ring-three{
-    display:none;
+    .axis-core-visual,
+  .axis-core-dot,
+  .axis-core-ring,
+  .axis-lines{
+    display:none !important;
   }
   .resume-list.two-col{
     grid-template-columns:1fr;
