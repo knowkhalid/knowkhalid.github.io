@@ -667,7 +667,17 @@ a.c-value:hover{ color:var(--orange-deep); }
   .work-grid{ grid-template-columns:1fr; }
   .services-grid{ grid-template-columns:1fr; }
   .about-grid{ grid-template-columns:1fr; }
-  .about-image{ grid-column:1; aspect-ratio:5/3; margin-top:28px; }
+  .about-image{
+    grid-column:1;
+    aspect-ratio:5/3;
+    margin-top:110px;
+  }
+  .about-image.clip-reveal.visible{
+    clip-path:inset(-55% 0 0 0);
+  }
+  .about-photo{
+    height:150%;
+  }
   .connect-head{ align-items:flex-start; }
   .connect-thumb{ width:84px; height:104px; }
   .copy-btn{ padding:9px 16px; }
