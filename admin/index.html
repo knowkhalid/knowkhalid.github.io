@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalid Portfolio Admin</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+  <section class="admin-login" id="adminLogin">
+    <form class="login-card" id="adminLoginForm">
+      <p class="kicker">PRIVATE ADMIN</p>
+      <h1>Login</h1>
+      <p class="intro">Enter your admin passcode to edit portfolio content.</p>
+      <label>Passcode
+        <input id="adminPasscode" type="password" autocomplete="current-password" placeholder="Enter passcode">
+      </label>
+      <button type="submit" class="primary-btn">Open Admin</button>
+      <p class="help" id="loginMessage">This is a lightweight static-site gate. GitHub token is still required for saving.</p>
+    </form>
+  </section>
+
+  <div id="adminApp" hidden>
+  <header class="admin-hero">
+    <div>
+      <p class="kicker">STATIC CONTROL PANEL</p>
+      <h1>Portfolio Admin</h1>
+      <p class="intro">Edit content, preview JSON, then save to GitHub Pages with your own token.</p>
+    </div>
+    <a href="../index.html" class="ghost-link">View Site</a>
+  </header>
+
+  <main class="admin-shell">
+    <section class="panel warning">
+      <strong>Important:</strong> GitHub Pages is static hosting. This panel can save only when you enter a fine-grained GitHub token for the <code>knowkhalid.github.io</code> repo. The token is never hardcoded.
+    </section>
+
+    <section class="panel git-panel">
+      <div class="panel-head">
+        <div>
+          <p class="kicker">GITHUB SAVE</p>
+          <h2>Repository</h2>
+        </div>
+        <button type="button" id="clearTokenBtn" class="line-btn">Clear token</button>
+      </div>
+      <div class="form-grid">
+        <label>Owner
+          <input id="ghOwner" value="knowkhalid" autocomplete="off">
+        </label>
+        <label>Repo
+          <input id="ghRepo" value="knowkhalid.github.io" autocomplete="off">
+        </label>
+        <label>Branch
+          <input id="ghBranch" value="main" autocomplete="off">
+        </label>
+        <label>Token storage
+          <select id="tokenStorage">
+            <option value="session">Session only</option>
+            <option value="local">Remember on this browser</option>
+          </select>
+        </label>
+      </div>
+      <label>Personal Access Token
+        <input id="ghToken" type="password" placeholder="github_pat_..." autocomplete="off">
+      </label>
+      <p class="help">Use a fine-grained token with Contents read/write access only for this repo. Do not share this admin URL with others.</p>
+    </section>
+
+    <form id="contentForm" class="editor"></form>
+
+    <section class="panel actions">
+      <div>
+        <button type="button" id="previewBtn" class="primary-btn">Update preview</button>
+        <button type="button" id="saveGithubBtn" class="primary-btn">Save to GitHub</button>
+      </div>
+      <div>
+        <button type="button" id="copyJsonBtn" class="line-btn">Copy JSON</button>
+        <button type="button" id="downloadJsonBtn" class="line-btn">Download site.json</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <p class="kicker">PREVIEW</p>
+          <h2>content/site.json</h2>
+        </div>
+        <span id="statusText" class="status">Loaded</span>
+      </div>
+      <pre id="jsonPreview"></pre>
+    </section>
+
+    <section class="panel help-panel">
+      <h2>Image Updates</h2>
+      <p>Use the image upload controls in the Images section. Upload commits the image to <code>assets/uploads/</code> through GitHub API and fills the path automatically, for example <code>./assets/uploads/new-photo.png</code>. After uploading, click <strong>Save to GitHub</strong> so <code>content/site.json</code> also stores the new path.</p>
+    </section>
+  </main>
+  </div>
+
+  <script src="./admin.js"></script>
+</body>
+</html>

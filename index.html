@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khalid Xaifi - Creative Technologist</title>
+<meta name="description" content="Khalid Xaifi - Creative Technologist. AI / Robotics / Design / Editing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <span class="loader-word">Khalid.</span>
+    <div class="loader-line"></div>
+    <span class="loader-tag">CREATIVE TECHNOLOGIST</span>
+  </div>
+</div>
+
+<div class="frame">
+  <div class="bg-circle c1"></div>
+  <div class="bg-circle c2"></div>
+  <div class="bg-circle c3"></div>
+
+  <svg class="signal-spine" id="signalSpine" viewBox="0 0 4 3000" preserveAspectRatio="none" aria-hidden="true">
+    <path id="spinePath" d="M2,0 L2,3000" />
+  </svg>
+
+  <nav class="nav" id="nav">
+    <div class="nav-left">
+      <span class="nav-plus">+1</span>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#resume" class="nav-link">Resume</a>
+      <a href="#services" class="nav-link">Skills</a>
+    </div>
+    <div class="nav-right">
+      <a href="#connect" class="nav-link">Connect</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="./resume.html" class="nav-link nav-resume">View Resume</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects" class="mobile-link"><span>01</span>Projects</a>
+    <a href="#about" class="mobile-link"><span>02</span>About</a>
+    <a href="#motion-lab" class="mobile-link"><span>03</span>AXIS</a>
+    <a href="#resume" class="mobile-link"><span>04</span>Resume</a>
+    <a href="#services" class="mobile-link"><span>05</span>Skills</a>
+    <a href="#experience" class="mobile-link"><span>06</span>Experience</a>
+    <a href="#contact" class="mobile-link"><span>07</span>Contact</a>
+  </div>
+
+  <header class="hero" id="hero">
+    <div class="hero-vnum reveal-up">
+      <span>001</span>
+      <div class="vline"></div>
+    </div>
+
+    <div class="hero-main">
+      <div class="hero-text">
+        <h1 class="hero-word">
+          <span class="mask"><span class="mask-inner" id="heroTitle">Khalid.</span></span>
+        </h1>
+        <p class="hero-role reveal-up" id="heroRole">Creative Technologist</p>
+        <p class="hero-focus reveal-up" id="heroFocus">AI / Robotics / Design / Editing</p>
+        <p class="hero-desc reveal-up" id="heroDesc">I design practical, intelligent, and visually premium systems.</p>
+
+        <a href="#projects" class="btn-square reveal-up" id="heroButton">
+          <span id="heroButtonText">View My Work</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orange-block" id="orangeBlock"></div>
+        <div class="hero-photo-wrap" id="heroPhoto">
+          <img src="./assets/hero-image.png" alt="Khalid portrait" class="hero-photo" id="heroImage" loading="eager" decoding="async">
+        </div>
+        <div class="hero-micro reveal-up">
+          <p class="micro-name" id="microName">Khalid Xaifi</p>
+          <p class="micro-loc" id="microLocation">Lucknow, India</p>
+          <p class="micro-focus" id="microFocus">AI / Robotics / Design</p>
+          <div class="hero-socials">
+            <a href="mailto:xaifikhalid267@gmail.com" class="social-dot" aria-label="Email" id="heroEmail">&#9993;</a>
+            <a href="#" class="social-dot" aria-label="Instagram" id="heroInstagram">&#9678;</a>
+            <a href="#" class="social-dot" aria-label="GitHub" id="heroGithub">&#9671;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue reveal-up">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <section class="section portfolio" id="projects">
+    <div class="section-label reveal-up"><span class="dot"></span>002 - SELECTED WORK</div>
+    <div class="portfolio-head">
+      <h2 class="huge-text huge-orange slide-left">PORT<br>FOLIO</h2>
+      <p class="portfolio-note reveal-up" id="portfolioNote">Selected systems and interfaces.</p>
+    </div>
+    <div class="work-grid" id="projectsGrid"></div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="section-label reveal-up"><span class="dot"></span>003 - PROFILE</div>
+    <div class="about-grid">
+      <h2 class="huge-text slide-left" id="aboutTitle">ABOUT<br>ME</h2>
+      <div class="about-copy">
+        <div id="aboutParagraphs"></div>
+        <div class="micro-block reveal-up" id="aboutStats"></div>
+        <div class="thin-line reveal-up"></div>
+      </div>
+      <div class="about-image clip-reveal">
+        <img src="./assets/my-photo.png" alt="Khalid portrait" class="about-photo" id="aboutImage" loading="eager" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="axis-detail-section" id="motion-lab">
+    <div class="axis-detail-grid">
+      <div class="axis-detail-left">
+        <span class="axis-detail-tag reveal-up"><span class="dot"></span><span id="axisMicro">04 - AXIS // BLUEPRINT</span></span>
+        <h2 class="axis-detail-headline slide-left" id="axisHeadline">System<br>Details</h2>
+        <p class="axis-detail-desc reveal-up" id="axisDesc"></p>
+        <div class="axis-detail-meta reveal-up" id="axisMeta"></div>
+      </div>
+
+      <div class="axis-detail-right reveal-up">
+        <div class="axis-panel">
+          <div class="axis-panel-top">
+            <span id="axisPanelLeft">AXIS SYSTEM MAP</span>
+            <span id="axisPanelRight">LIVE CONCEPT</span>
+          </div>
+          <div class="axis-core-visual" aria-hidden="true">
+            <div class="axis-core-dot"></div>
+            <div class="axis-core-ring ring-one"></div>
+            <div class="axis-core-ring ring-two"></div>
+            <div class="axis-core-ring ring-three"></div>
+          </div>
+          <div id="axisModules"></div>
+          <svg class="axis-lines" viewBox="0 0 800 520" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M400 260 C255 120 175 115 105 150"></path>
+            <path d="M400 260 C545 120 625 115 695 150"></path>
+            <path d="M400 260 C255 405 175 405 105 370"></path>
+            <path d="M400 260 C545 405 625 405 695 370"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="axis-detail-strip reveal-up" id="axisStrip"></div>
+  </section>
+
+  <section class="section resume" id="resume">
+    <div class="section-label reveal-up"><span class="dot"></span>005 - RESUME</div>
+    <div class="resume-head">
+      <div>
+        <h2 class="huge-text huge-orange slide-left" id="resumeHeading">RESUME</h2>
+        <p class="resume-subtitle reveal-up" id="resumeSubtitle">Khalid Xaifi - Creative Technologist</p>
+      </div>
+      <p class="resume-intro reveal-up" id="resumeIntro"></p>
+    </div>
+
+    <div class="resume-grid reveal-up">
+      <article class="resume-profile">
+        <span class="resume-block-label">PROFILE</span>
+        <p id="resumeProfileSummary"></p>
+      </article>
+      <div class="resume-block">
+        <span class="resume-block-label">CORE FOCUS</span>
+        <ul class="resume-list" id="resumeCoreFocus"></ul>
+      </div>
+      <div class="resume-block">
+        <span class="resume-block-label">TECHNICAL SKILLS</span>
+        <ul class="resume-list two-col" id="resumeTechnicalSkills"></ul>
+      </div>
+      <div class="resume-block">
+        <span class="resume-block-label">CREATIVE SKILLS</span>
+        <ul class="resume-list two-col" id="resumeCreativeSkills"></ul>
+      </div>
+      <div class="resume-block">
+        <span class="resume-block-label">FEATURED PROJECTS</span>
+        <ul class="resume-list" id="resumeFeaturedProjects"></ul>
+      </div>
+      <div class="resume-block">
+        <span class="resume-block-label">SERVICES</span>
+        <ul class="resume-list two-col" id="resumeServices"></ul>
+      </div>
+      <div class="resume-block resume-contact">
+        <span class="resume-block-label">CONTACT</span>
+        <div id="resumeContact"></div>
+      </div>
+    </div>
+
+    <div class="resume-actions reveal-up" id="resumeButtons"></div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="section-label reveal-up"><span class="dot"></span>006 - CAPABILITIES</div>
+    <h2 class="huge-text huge-orange slide-left">SER-<br>VICES</h2>
+    <div class="services-grid" id="servicesGrid"></div>
+    <div class="chips reveal-up" id="skillsChips"></div>
+  </section>
+
+  <section class="section experience" id="experience">
+    <div class="exp-layout">
+      <div class="exp-left">
+        <div class="section-label reveal-up"><span class="dot"></span>007 - JOURNEY</div>
+        <div class="timeline" id="timeline">
+          <div class="timeline-line" id="timelineLine"></div>
+          <div id="experienceList"></div>
+        </div>
+      </div>
+      <h2 class="huge-text huge-orange exp-vertical slide-left">EXPERIENCE</h2>
+    </div>
+  </section>
+
+  <section class="section connect" id="connect">
+    <div class="section-label reveal-up"><span class="dot"></span>008 - SOCIAL ACCESS</div>
+    <div class="connect-head">
+      <h2 class="huge-text huge-orange slide-left">CON-<br>NECT</h2>
+      <div class="connect-thumb clip-reveal">
+        <img src="./assets/my-photo.png" alt="Khalid cropped thumbnail" class="connect-photo" id="connectImage">
+      </div>
+    </div>
+    <div class="thin-line reveal-up"></div>
+    <div class="connect-grid" id="connectGrid"></div>
+    <div class="availability-card reveal-up">
+      <span class="dot"></span>
+      <div>
+        <h4>Available for</h4>
+        <ul class="availability-list" id="availabilityList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="section-label reveal-up"><span class="dot"></span>009 - GET IN TOUCH</div>
+    <div class="contact-grid">
+      <h2 class="huge-text huge-orange slide-left" id="contactHeading">CONTACTS</h2>
+      <div class="contact-info">
+        <p class="contact-cta reveal-up" id="contactClosing">Let's build something practical, intelligent, and visually strong.</p>
+        <div class="contact-rows reveal-up" id="contactRows"></div>
+        <a href="mailto:xaifikhalid267@gmail.com" class="btn-square reveal-up" id="contactButton">
+          <span id="contactButtonText">Get In Touch</span>
+          <span class="btn-arrow">&rarr;</span>
+        </a>
+        <svg class="globe-icon" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="40"></circle>
+          <ellipse cx="50" cy="50" rx="18" ry="40"></ellipse>
+          <line x1="10" y1="50" x2="90" y2="50"></line>
+          <line x1="15" y1="30" x2="85" y2="30"></line>
+          <line x1="15" y1="70" x2="85" y2="70"></line>
+        </svg>
+      </div>
+    </div>
+    <footer class="footer">
+      <span id="footerLeft">(c) 2026 KHALID XAIFI</span>
+      <span id="footerRight">BUILT FROM LUCKNOW, INDIA</span>
+    </footer>
+  </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
