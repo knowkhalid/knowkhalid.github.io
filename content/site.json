@@ -321,22 +321,27 @@
     {
       "number": "PHASE 01",
       "title": "Practical Electronics Foundation",
-      "description": "Hands-on learning with circuits, sensors, microcontrollers, motors, power systems, and debugging."
+      "description": "My experience with electronics since childhood has shaped my skills and understanding in this field."
     },
     {
       "number": "PHASE 02",
       "title": "Automation & Machine Logic",
-      "description": "Designing real machine workflows using stepper motors, servos, calibration systems, LCD menus, and batch-based control."
+      "description": "I have 2 years of expertise in designing efficient machine workflows using stepper motors, servos, calibration systems, LCD menus, and batch-based control."
     },
     {
       "number": "PHASE 03",
-      "title": "UI / Editing / Visual Design",
-      "description": "Creating interfaces, edits, thumbnails, posters, visual systems, and storytelling-based project presentation."
+      "title": "Photo & Video Editing",
+      "description": "I bring over five years of expertise in photo and video editing. Creating edits, thumbnails, posters, and storytelling-based project presentations."
     },
     {
       "number": "PHASE 04",
       "title": "AI Assistant & Robotics Direction",
       "description": "Combining AI, voice, memory, PC tools, and embedded hardware into one long-term personal AI ecosystem direction."
+    },
+    {
+      "number": "Phase 05",
+      "title": "Social Media Management",
+      "description": "I have branded and managed @dripndrop.streetwear, a clothing store, along with several other brands."
     }
   ],
   "connect": {
