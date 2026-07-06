@@ -63,21 +63,30 @@
   "projects": [
     {
       "number": "01",
-      "title": "AXIS Personal AI OS",
+      "title": "AXIS- Personal AI OS",
       "description": "A personal AI ecosystem concept with voice interaction, desktop interface, memory, PC tools, automation, visual context, and future robotics/IoT control.",
       "category": "AI Systems / Product Design",
       "link": "#motion-lab",
-      "buttonLabel": "Open AXIS blueprint",
+      "buttonLabel": "More about Axis.",
       "visual": "axis"
     },
     {
       "number": "02",
-      "title": "Wire Cutting Machine",
+      "title": "WCM- An Industrial Wire Cutting Machine",
       "description": "An ESP32-based automatic wire cutting machine for controlled feeding and batch cutting with stepper feed, servo cutting, LCD menu, calibration, and quantity workflow.",
       "category": "Robotics / Embedded Systems",
       "link": "#contact",
       "buttonLabel": "Discuss machine",
       "visual": "wire"
+    },
+    {
+      "number": "03",
+      "title": "OBY- An Obstacle Avoidance Robot",
+      "description": "An Arduino Uno-based autonomous robot that navigates its environment by detecting and maneuvering around physical barriers.",
+      "category": "Robotics / Embedded Systems",
+      "link": "https://youtu.be/3ho1z9Ixm2s?si=MRnz2MHXA8qvnvC9",
+      "buttonLabel": "Watch OBY",
+      "visual": "Robot"
     }
   ],
   "axis": {
