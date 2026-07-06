@@ -992,6 +992,15 @@ a.c-value:hover{ color:var(--orange-deep); }
   border:1.5px solid var(--ink);
   background:var(--cream-card);
 }
+.loader-logo {
+  width: clamp(96px, 12vw, 170px);
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 28px;
+  filter: drop-shadow(0 18px 35px rgba(0,0,0,.25));
+}
+
 .resume-block-label{
   display:block;
   font-family:var(--mono);
