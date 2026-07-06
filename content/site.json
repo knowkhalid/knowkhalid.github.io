@@ -1,0 +1,398 @@
+{
+  "seo": {
+    "title": "Khalid Xaifi - Creative Technologist",
+    "description": "Khalid Xaifi - Creative Technologist focused on AI, robotics, automation, interface design, editing, and visual storytelling."
+  },
+  "profile": {
+    "name": "Khalid Xaifi",
+    "role": "Creative Technologist",
+    "location": "Lucknow, India",
+    "summary": "I am Khalid Xaifi, a self-learning Creative Technologist from Lucknow, India. My work connects AI systems, robotics, embedded automation, interface design, editing, and visual storytelling.\n\nI build practical systems with a strong visual identity - from ESP32-based machines and AI assistant concepts to editorial websites, motion interfaces, and product-style presentations.",
+    "availability": [
+      "AI assistant concept planning",
+      "Robotics and embedded project discussion",
+      "Website and portfolio design",
+      "Editing, visuals, and creative collaboration"
+    ],
+    "email": "xaifikhalid267@gmail.com",
+    "phone": "+918299150971",
+    "phoneDisplay": "+91 8299150971",
+    "whatsapp": "https://wa.me/918299150971",
+    "instagram": "https://www.instagram.com/khaaaalidddd__?utm_source=qr",
+    "github": "#",
+    "resumeLink": "./resume.html",
+    "focus": "AI / Robotics / Design / Editing"
+  },
+  "images": {
+    "heroImage": "./assets/hero-image.png",
+    "aboutImage": "./assets/my-photo.png",
+    "connectImage": "./assets/my-photo.png"
+  },
+  "hero": {
+    "microLabel": "AI / Robotics / Design",
+    "title": "Khalid.",
+    "roleLine": "AI / Robotics / Design / Editing",
+    "description": "I design practical, intelligent, and visually premium systems across AI, robotics, automation, UI design, and creative media.",
+    "primaryButtonText": "View My Work",
+    "primaryButtonLink": "#projects"
+  },
+  "about": {
+    "title": "ABOUT<br>ME",
+    "paragraphs": [
+      "I'm building my direction around the intersection of technology and visual design. My work is focused on practical systems - machines, assistants, interfaces, and creative tools - that are useful first and visually refined second.",
+      "I like turning rough technical ideas into clear systems: planning the logic, building the interface, testing the workflow, and presenting the result with strong visual identity."
+    ],
+    "stats": [
+      {
+        "label": "BASED IN",
+        "value": "LUCKNOW, INDIA"
+      },
+      {
+        "label": "FOCUS",
+        "value": "AI / ROBOTICS / DESIGN"
+      },
+      {
+        "label": "APPROACH",
+        "value": "BUILD, TEST, REFINE"
+      }
+    ]
+  },
+  "projectsIntro": {
+    "note": "Selected systems and interfaces that show how I connect technical logic with visual presentation."
+  },
+  "projects": [
+    {
+      "number": "01",
+      "title": "AXIS Personal AI OS",
+      "description": "A personal AI ecosystem concept with voice interaction, desktop interface, memory, PC tools, automation, visual context, and future robotics/IoT control.",
+      "category": "AI Systems / Product Design",
+      "link": "#motion-lab",
+      "buttonLabel": "Open AXIS blueprint",
+      "visual": "axis"
+    },
+    {
+      "number": "02",
+      "title": "Wire Cutting Machine",
+      "description": "An ESP32-based automatic wire cutting machine for controlled feeding and batch cutting with stepper feed, servo cutting, LCD menu, calibration, and quantity workflow.",
+      "category": "Robotics / Embedded Systems",
+      "link": "#contact",
+      "buttonLabel": "Discuss machine",
+      "visual": "wire"
+    }
+  ],
+  "axis": {
+    "microLabel": "03 - AXIS // BLUEPRINT",
+    "headline": "System<br>Details",
+    "description": "AXIS is my personal AI ecosystem concept - designed as a compact, intelligent workspace that can connect voice, PC tools, memory, automation, visual context, and future robotics/IoT control.",
+    "metaCards": [
+      {
+        "label": "Core Direction",
+        "text": "Personal AI OS"
+      },
+      {
+        "label": "Interface Style",
+        "text": "Compact Orb + Dashboard"
+      },
+      {
+        "label": "Future Scope",
+        "text": "PC / Mobile / Robotics / IoT"
+      }
+    ],
+    "panelTopLeft": "AXIS SYSTEM MAP",
+    "panelTopRight": "LIVE CONCEPT",
+    "modules": [
+      {
+        "number": "01",
+        "title": "VOICE CORE",
+        "description": "Wake - STT - TTS - Commands"
+      },
+      {
+        "number": "02",
+        "title": "PC CONTROL",
+        "description": "Apps - Files - Tools - Actions"
+      },
+      {
+        "number": "03",
+        "title": "VISUAL CONTEXT",
+        "description": "Screen - UI - Current Task"
+      },
+      {
+        "number": "04",
+        "title": "AUTOMATION",
+        "description": "Reminders - Routines - Workflows"
+      }
+    ],
+    "detailStrip": [
+      {
+        "label": "Current Build Focus",
+        "text": "Voice interaction, dashboard UI, memory planning, automation logic, PC tools, and modular structure."
+      },
+      {
+        "label": "Design Principle",
+        "text": "Useful first, visually refined second - every feature should work practically and feel clear."
+      },
+      {
+        "label": "Next Direction",
+        "text": "More stable assistant behavior, better project memory, and future robotics/IoT connection."
+      }
+    ]
+  },
+  "resume": {
+    "heading": "RESUME",
+    "subtitle": "Khalid Xaifi - Creative Technologist",
+    "intro": "Practical builder focused on AI systems, robotics, automation, interface design, editing, and product-style presentation.",
+    "profileSummary": "I build practical and visually premium systems across AI, robotics, automation, UI design, editing, and product presentation. My work connects technical thinking with creative execution.",
+    "coreFocus": [
+      "AI Systems",
+      "Robotics & Embedded",
+      "Web / UI Design",
+      "Editing & Visual Design",
+      "Product Thinking"
+    ],
+    "technicalSkills": [
+      "ESP32",
+      "Arduino",
+      "Python",
+      "JavaScript",
+      "HTML / CSS",
+      "Embedded Systems",
+      "Stepper / Servo Control",
+      "Automation Logic",
+      "AI Assistant Planning",
+      "Product Presentation"
+    ],
+    "creativeSkills": [
+      "Graphic Design",
+      "Poster Design",
+      "Thumbnail Design",
+      "Photo Editing",
+      "Video Editing",
+      "Visual Storytelling",
+      "Interface Aesthetics",
+      "Brand-style Presentation"
+    ],
+    "featuredProjects": [
+      "AXIS Personal AI OS",
+      "Wire Cutting Machine"
+    ],
+    "services": [
+      "AI Assistant Concept Planning",
+      "Robotics / Embedded Prototyping",
+      "Website & Portfolio Design",
+      "UI / Interface Design",
+      "Video / Photo Editing",
+      "Posters / Thumbnails / Graphics",
+      "Product Presentation",
+      "Creative Collaboration"
+    ],
+    "experience": [
+      {
+        "number": "PHASE 01",
+        "title": "Practical Electronics Foundation",
+        "description": "Hands-on circuits, sensors, and microcontrollers - learning by building, not just reading."
+      },
+      {
+        "number": "PHASE 02",
+        "title": "Automation & Machine Logic",
+        "description": "Designing control logic for real machines - steppers, servos, calibration, and batch workflows."
+      },
+      {
+        "number": "PHASE 03",
+        "title": "UI / Editing / Visual Design",
+        "description": "Shaping how systems look and feel with interfaces, edits, and visual storytelling."
+      },
+      {
+        "number": "PHASE 04",
+        "title": "AI Assistant & Robotics Direction",
+        "description": "Combining voice, memory, embedded hardware, and product thinking into one coherent system direction."
+      }
+    ],
+    "contact": [
+      {
+        "label": "Email",
+        "value": "xaifikhalid267@gmail.com",
+        "link": "mailto:xaifikhalid267@gmail.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+91 8299150971",
+        "link": "tel:+918299150971"
+      },
+      {
+        "label": "WhatsApp",
+        "value": "wa.me/918299150971",
+        "link": "https://wa.me/918299150971"
+      },
+      {
+        "label": "Instagram",
+        "value": "@khaaaalidddd__",
+        "link": "https://www.instagram.com/khaaaalidddd__?utm_source=qr"
+      },
+      {
+        "label": "Location",
+        "value": "Lucknow, India",
+        "link": ""
+      }
+    ],
+    "buttons": [
+      {
+        "label": "View Resume",
+        "link": "./resume.html"
+      },
+      {
+        "label": "Contact Me",
+        "link": "#contact"
+      },
+      {
+        "label": "WhatsApp",
+        "link": "https://wa.me/918299150971"
+      },
+      {
+        "label": "Email",
+        "link": "mailto:xaifikhalid267@gmail.com"
+      }
+    ]
+  },
+  "services": [
+    {
+      "number": "01",
+      "title": "AI Assistant Concept Planning",
+      "description": "Planning voice, memory, tool use, interface flow, and practical assistant behavior."
+    },
+    {
+      "number": "02",
+      "title": "Robotics / Embedded Prototyping",
+      "description": "ESP32 and Arduino builds from wiring and control logic to working automation flows."
+    },
+    {
+      "number": "03",
+      "title": "Website & Portfolio Design",
+      "description": "Premium personal websites and portfolio systems with strong typography and responsive structure."
+    },
+    {
+      "number": "04",
+      "title": "UI / Interface Design",
+      "description": "Clear, modern interface layouts for tools, dashboards, concepts, and product-style presentations."
+    },
+    {
+      "number": "05",
+      "title": "Video / Photo Editing",
+      "description": "Clean visual editing for projects, profiles, stories, and product-style content."
+    },
+    {
+      "number": "06",
+      "title": "Posters / Thumbnails / Graphics",
+      "description": "Bold creative visuals built for attention, clarity, and strong identity."
+    },
+    {
+      "number": "07",
+      "title": "Product Presentation",
+      "description": "Turning technical builds into clear stories with visuals, structure, and explanation."
+    },
+    {
+      "number": "08",
+      "title": "Creative Collaboration",
+      "description": "Support for ideas that need both practical building and visual thinking."
+    }
+  ],
+  "skills": [
+    "ESP32",
+    "Arduino",
+    "Python",
+    "JavaScript",
+    "HTML / CSS",
+    "Embedded Systems",
+    "Stepper / Servo Control",
+    "Automation Logic",
+    "UI Design",
+    "Web Design",
+    "AI Assistant Planning",
+    "Product Presentation",
+    "Graphic Design",
+    "Poster Design",
+    "Thumbnail Design",
+    "Photo Editing",
+    "Video Editing",
+    "Visual Storytelling",
+    "Interface Aesthetics",
+    "Brand-style Presentation"
+  ],
+  "experience": [
+    {
+      "number": "PHASE 01",
+      "title": "Practical Electronics Foundation",
+      "description": "Hands-on learning with circuits, sensors, microcontrollers, motors, power systems, and debugging."
+    },
+    {
+      "number": "PHASE 02",
+      "title": "Automation & Machine Logic",
+      "description": "Designing real machine workflows using stepper motors, servos, calibration systems, LCD menus, and batch-based control."
+    },
+    {
+      "number": "PHASE 03",
+      "title": "UI / Editing / Visual Design",
+      "description": "Creating interfaces, edits, thumbnails, posters, visual systems, and storytelling-based project presentation."
+    },
+    {
+      "number": "PHASE 04",
+      "title": "AI Assistant & Robotics Direction",
+      "description": "Combining AI, voice, memory, PC tools, and embedded hardware into one long-term personal AI ecosystem direction."
+    }
+  ],
+  "connect": {
+    "cards": [
+      {
+        "number": "01",
+        "label": "INSTAGRAM",
+        "text": "Follow my creative updates, design experiments, and project visuals.",
+        "link": "https://www.instagram.com/khaaaalidddd__?utm_source=qr"
+      },
+      {
+        "number": "02",
+        "label": "WHATSAPP",
+        "text": "Message me directly for collaborations, projects, or quick communication.",
+        "link": "https://wa.me/918299150971"
+      },
+      {
+        "number": "03",
+        "label": "PHONE",
+        "text": "Direct contact number for serious project or collaboration queries.",
+        "link": "tel:+918299150971",
+        "phoneDisplay": "+91 8299150971",
+        "copyValue": "+918299150971"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "CONTACTS",
+    "closingText": "Let's build something practical, intelligent, and visually strong.",
+    "buttonText": "Get In Touch",
+    "buttonLink": "mailto:xaifikhalid267@gmail.com",
+    "contactCards": [
+      {
+        "label": "EMAIL",
+        "value": "xaifikhalid267@gmail.com",
+        "link": "mailto:xaifikhalid267@gmail.com"
+      },
+      {
+        "label": "PHONE",
+        "value": "+91 8299150971",
+        "link": "tel:+918299150971"
+      },
+      {
+        "label": "LOCATION",
+        "value": "Lucknow, India",
+        "link": ""
+      },
+      {
+        "label": "FOCUS",
+        "value": "AI / Robotics / Design / Editing",
+        "link": ""
+      }
+    ]
+  },
+  "footer": {
+    "left": "(c) 2026 KHALID XAIFI",
+    "right": "BUILT FROM LUCKNOW, INDIA"
+  }
+}
