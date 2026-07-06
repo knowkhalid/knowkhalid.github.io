@@ -265,7 +265,6 @@ a:focus-visible, button:focus-visible{
 }
 .hero-photo-wrap.in{ animation:photoIn 1s var(--ease) .45s forwards; }
 @keyframes photoIn{ to{ opacity:1; transform:translateY(0); } }
-
 .hero-photo{
   height:124%;
   max-width:none;
@@ -274,6 +273,7 @@ a:focus-visible, button:focus-visible{
   filter:drop-shadow(0 30px 40px rgba(0,0,0,.18));
   transform:none !important;
 }
+
 .hero-micro{
   position:absolute; right:0; bottom:-8px;
   text-align:right; font-family:var(--mono);
@@ -629,6 +629,15 @@ a.c-value:hover{ color:var(--orange-deep); }
 /* ============================================
    RESPONSIVE
    ============================================ */
+@media (max-width:1100px){
+  .about-grid{ grid-template-columns:1fr 1fr; }
+  .about-image{ grid-column:span 2; aspect-ratio:5/3; margin-top:48px; }
+  .about-image.clip-reveal.visible{ clip-path:inset(-55% 0 0 0); }
+  .about-photo{ height:155%; }
+  .work-grid{ grid-template-columns:1fr 1fr; }
+  .services-grid{ grid-template-columns:1fr 1fr; }
+  .connect-grid{ grid-template-columns:1fr 1fr; }
+}
 
 @media (max-width:1300px) and (min-width:1101px){
   .about-grid{
@@ -647,15 +656,6 @@ a.c-value:hover{ color:var(--orange-deep); }
   .about-photo{
     height:155%;
   }
-}
-
-
-@media (max-width:1100px){
-  .about-grid{ grid-template-columns:1fr 1fr; }
-  .about-image{ grid-column:span 2; aspect-ratio:5/3; margin-top:48px; }
-  .work-grid{ grid-template-columns:1fr 1fr; }
-  .services-grid{ grid-template-columns:1fr 1fr; }
-  .connect-grid{ grid-template-columns:1fr 1fr; }
 }
 
 @media (max-width:900px){
@@ -1101,7 +1101,7 @@ a.c-value:hover{ color:var(--orange-deep); }
   .axis-detail-headline{
     font-size:clamp(3.5rem, 18vw, 5.8rem);
   }
-   .axis-panel{
+  .axis-panel{
     height:620px;
     border-radius:14px;
     background:rgba(255,255,255,.5);
@@ -1121,7 +1121,7 @@ a.c-value:hover{ color:var(--orange-deep); }
   .module-two{ top:185px; }
   .module-three{ bottom:185px; }
   .module-four{ bottom:72px; }
-    .axis-core-visual,
+  .axis-core-visual,
   .axis-core-dot,
   .axis-core-ring,
   .axis-lines{
