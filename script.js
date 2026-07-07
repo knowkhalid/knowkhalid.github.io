@@ -874,3 +874,156 @@ function escapeHTML(value){
 function escapeAttr(value){
   return escapeHTML(value).replace(/`/g, "&#096;");
 }
+
+/* =========================================================
+   GoatCounter Click Tracking Patch
+   Adds tracking to static + dynamically generated buttons/links.
+   Safe: no design/layout changes.
+   ========================================================= */
+
+(function () {
+  const TRACKED_ATTR = "data-goatcounter-click";
+
+  function cleanText(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, " ");
+  }
+
+  function hasText(el, words) {
+    const text = cleanText(
+      `${el.id || ""} ${el.className || ""} ${el.getAttribute("aria-label") || ""} ${el.textContent || ""}`
+    );
+
+    return words.some((word) => text.includes(word));
+  }
+
+  function closestText(el) {
+    const card =
+      el.closest(".work-card, .project-card, .resume-block, .contact-row, .connect-card, .social-card, article, li, div") ||
+      el;
+
+    return cleanText(card.textContent || "");
+  }
+
+  function getTrackingName(el) {
+    const href = cleanText(el.getAttribute("href"));
+    const id = cleanText(el.id);
+    const aria = cleanText(el.getAttribute("aria-label"));
+    const text = cleanText(el.textContent);
+    const full = cleanText(`${id} ${aria} ${text} ${href}`);
+    const parent = closestText(el);
+
+    // Navbar / section links
+    if (href === "#projects") return "nav-projects";
+    if (href === "#about") return "nav-about";
+    if (href === "#resume") return "nav-resume-section";
+    if (href === "#services") return "nav-skills";
+    if (href === "#connect") return "nav-connect";
+    if (href === "#contact") return "nav-contact";
+    if (href === "#motion-lab") return "nav-axis";
+
+    // Resume page
+    if (href.includes("resume.html")) return "view-resume";
+
+    // Contact/social links
+    if (href.includes("wa.me") || full.includes("whatsapp")) return "click-whatsapp";
+    if (href.includes("mailto:") || full.includes("email")) return "click-email";
+    if (href.includes("tel:") || full.includes("phone") || full.includes("call")) return "click-phone";
+    if (href.includes("instagram") || full.includes("instagram")) return "click-instagram";
+    if (href.includes("github") || full.includes("github")) return "click-github";
+
+    // Hero
+    if (id.includes("herobutton") || full.includes("view my work")) return "hero-view-work";
+    if (id.includes("heroemail")) return "hero-email";
+    if (id.includes("heroinstagram")) return "hero-instagram";
+    if (id.includes("herogithub")) return "hero-github";
+
+    // Contact button
+    if (id.includes("contactbutton") || full.includes("get in touch")) return "contact-email-button";
+
+    // Copy number button
+    if (
+      id.includes("copynumber") ||
+      full.includes("copy number") ||
+      full.includes("copied") ||
+      hasText(el, ["copy number", "copied"])
+    ) {
+      return "copy-number";
+    }
+
+    // Project cards / generated project links
+    if (parent.includes("axis")) return "project-axis";
+    if (parent.includes("wire cutting") || parent.includes("wire cutter")) return "project-wire-cutter";
+    if (parent.includes("portfolio") || parent.includes("creative interface")) return "project-portfolio-interface";
+
+    // Resume section dynamic buttons
+    if (parent.includes("resume") && full.includes("contact")) return "resume-contact";
+    if (parent.includes("resume") && full.includes("whatsapp")) return "resume-whatsapp";
+    if (parent.includes("resume") && full.includes("email")) return "resume-email";
+
+    // Connect section generated cards
+    if (parent.includes("instagram")) return "connect-instagram";
+    if (parent.includes("whatsapp")) return "connect-whatsapp";
+    if (parent.includes("email")) return "connect-email";
+    if (parent.includes("phone")) return "connect-phone";
+
+    // Generic fallback for buttons/links with useful text
+    if (text) {
+      return `click-${text
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "")
+        .slice(0, 60)}`;
+    }
+
+    return null;
+  }
+
+  function applyTracking(root = document) {
+    const clickableItems = root.querySelectorAll("a, button, [role='button']");
+
+    clickableItems.forEach((el) => {
+      if (el.hasAttribute(TRACKED_ATTR)) return;
+
+      const name = getTrackingName(el);
+      if (!name) return;
+
+      el.setAttribute(TRACKED_ATTR, name);
+    });
+  }
+
+  // Apply once after DOM is ready
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => applyTracking());
+  } else {
+    applyTracking();
+  }
+
+  // Apply again after dynamic content loads
+  window.addEventListener("load", () => {
+    applyTracking();
+
+    setTimeout(applyTracking, 500);
+    setTimeout(applyTracking, 1500);
+    setTimeout(applyTracking, 3000);
+  });
+
+  // Watch dynamically injected content
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === 1) {
+          applyTracking(node);
+        }
+      });
+    }
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+  });
+
+  console.log("GoatCounter dynamic click tracking enabled");
+})();
