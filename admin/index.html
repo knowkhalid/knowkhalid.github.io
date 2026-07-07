@@ -39,31 +39,72 @@
       <strong>Important:</strong> GitHub Pages is static hosting. This panel can save only when you enter a fine-grained GitHub token for the <code>knowkhalid.github.io</code> repo. The token is never hardcoded.
     </section>
 
-    <section class="panel analytics-panel">
-      <div class="panel-head">
-        <div>
-          <p class="kicker">LOCAL WEB ANALYSIS</p>
-          <h2>Visitor Activity</h2>
-        </div>
-        <button type="button" id="clearAnalyticsBtn" class="line-btn">Clear analytics</button>
-      </div>
-      <p class="help">Static GitHub Pages cannot count every visitor without an external analytics service. This dashboard shows activity recorded in this browser/device.</p>
-      <div class="analytics-grid" id="analyticsGrid"></div>
-      <div class="analytics-lists">
-        <div>
-          <h2>Page Views</h2>
-          <div id="analyticsPages" class="mini-list"></div>
-        </div>
-        <div>
-          <h2>Clicks</h2>
-          <div id="analyticsClicks" class="mini-list"></div>
-        </div>
-        <div>
-          <h2>Recent Sessions</h2>
-          <div id="analyticsSessions" class="mini-list"></div>
-        </div>
-      </div>
-    </section>
+    <section class="panel real-analytics-card">
+  <div class="panel-head analytics-head">
+    <div>
+      <p class="kicker">REAL ANALYTICS</p>
+      <h2>Live Visitor Analytics</h2>
+    </div>
+
+    <div class="analytics-actions">
+      <a class="ghost-link" href="https://knowkhalid.goatcounter.com/" target="_blank" rel="noopener">
+        Open GoatCounter
+      </a>
+      <a class="ghost-link" href="https://dash.cloudflare.com/" target="_blank" rel="noopener">
+        Open Cloudflare
+      </a>
+    </div>
+  </div>
+
+  <p class="help">
+    This panel shows real public visitor analytics from GoatCounter. Cloudflare Web Analytics is available through the secure Cloudflare dashboard.
+  </p>
+
+  <iframe
+    class="analytics-frame"
+    src="https://knowkhalid.goatcounter.com/"
+    title="GoatCounter Analytics Dashboard"
+    loading="lazy">
+  </iframe>
+
+  <p class="help analytics-frame-note">
+    If the dashboard does not appear here, open GoatCounter settings and allow embedding from
+    <code>https://knowkhalid.github.io</code>. After custom domain approval, also allow
+    <code>https://khalid.is-a.dev</code>.
+  </p>
+</section>
+
+<section class="panel analytics-panel">
+  <div class="panel-head">
+    <div>
+      <p class="kicker">LOCAL DEVICE ACTIVITY</p>
+      <h2>Browser-only Activity</h2>
+    </div>
+    <button type="button" id="clearAnalyticsBtn" class="line-btn">Clear local activity</button>
+  </div>
+
+  <p class="help">
+    This section shows activity recorded only in this browser/device. It is not real public visitor analytics.
+    For real website traffic, use GoatCounter and Cloudflare Web Analytics above.
+  </p>
+
+  <div class="analytics-grid" id="analyticsGrid"></div>
+
+  <div class="analytics-lists">
+    <div>
+      <h2>Page Views</h2>
+      <div id="analyticsPages" class="mini-list"></div>
+    </div>
+    <div>
+      <h2>Clicks</h2>
+      <div id="analyticsClicks" class="mini-list"></div>
+    </div>
+    <div>
+      <h2>Recent Sessions</h2>
+      <div id="analyticsSessions" class="mini-list"></div>
+    </div>
+  </div>
+</section>
 
     <section class="panel git-panel">
       <div class="panel-head">
