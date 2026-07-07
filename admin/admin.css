@@ -440,3 +440,47 @@ pre{
     flex-direction:column;
   }
 }
+
+/* Real analytics dashboard embed */
+.real-analytics-card {
+  overflow: hidden;
+}
+
+.analytics-head {
+  align-items: flex-start;
+}
+
+.analytics-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.analytics-frame {
+  width: 100%;
+  height: 720px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  display: block;
+}
+
+.analytics-frame-note {
+  margin-top: 14px;
+}
+
+@media (max-width: 900px) {
+  .analytics-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .analytics-actions .ghost-link {
+    width: 100%;
+  }
+
+  .analytics-frame {
+    height: 620px;
+  }
+}
